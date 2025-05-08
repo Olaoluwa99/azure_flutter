@@ -1,4 +1,5 @@
 import 'package:first_flutter/anchor_one.dart';
+import 'package:first_flutter/tailor_home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const AnchorOne(),//MyHomePage(title: 'Home Page'),
+      home: const TailorHome(),//AnchorOne(),//MyHomePage(title: 'Home Page'),
     );
   }
 }
