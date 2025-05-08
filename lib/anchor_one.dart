@@ -22,7 +22,7 @@ class _AnchorOneState extends State<AnchorOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.surface,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text('Profile page'),
       ),
       body: Padding(
@@ -32,7 +32,7 @@ class _AnchorOneState extends State<AnchorOne> {
           children: [
             SizedBox(width: double.infinity),
             Text(
-              'Hello, Olaoluwa',
+              'Hello, Daniel',
               style: TextStyle(
                 color: Colors.deepOrangeAccent,
                 fontSize: 18.0,
