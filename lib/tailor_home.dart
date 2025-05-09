@@ -1,3 +1,4 @@
+import 'package:first_flutter/create_history_screen.dart';
 import 'package:first_flutter/history_screen.dart';
 import 'package:first_flutter/home_utils.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +67,7 @@ class TailorHome extends StatelessWidget {
                     width: double.infinity,
                     height: 200,
                     decoration: BoxDecoration(
-                      color: Colors.brown.withOpacity(0.7),
+                      color: Colors.brown.withValues(alpha: 0.7),
                       borderRadius: BorderRadius.circular(24),
                     ),
                   ),
@@ -133,6 +134,24 @@ class TailorHome extends StatelessWidget {
                   subtitle:
                       'Access to previously Tailored & Sample Resumes and Cover letter created.',
                   icon: Icons.history,
+                ),
+              ),
+              SizedBox(height: 16),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return CreateHistoryScreen();
+                      },
+                    ),
+                  );
+                },
+                child: HomeItem(
+                  title: 'Create History for Page',
+                  subtitle:
+                      'Access to previously Tailored & Sample Resumes and Cover letter created.',
+                  icon: Icons.create,
                 ),
               ),
               SizedBox(height: 16),
